@@ -1,0 +1,86 @@
+[
+  {
+    "ContainingType": "TrackerWebService.Controllers.CompletedJobsController",
+    "Method": "RecordCompletedJob",
+    "RelativePath": "api/CompletedJobs",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "TrackerWebService.Controllers.CompletedJobsController\u002BCompletedJobRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TrackerWebService.Controllers.CompletedJobsController",
+    "Method": "GetCompletedJobCount",
+    "RelativePath": "api/CompletedJobs/count/{peerId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "peerId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TrackerWebService.Controllers.CompletedJobsController",
+    "Method": "GetPeerSummary",
+    "RelativePath": "api/CompletedJobs/peer-summary",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TrackerWebService.Controllers.PeersController",
+    "Method": "GetPeers",
+    "RelativePath": "api/Peers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TrackerWebService.Controllers.PeersController",
+    "Method": "RegisterPeer",
+    "RelativePath": "api/Peers",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "TrackerWebService.Models.PeerRegistrationRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TrackerWebService.Controllers.PeersController",
+    "Method": "UpdateHeartbeat",
+    "RelativePath": "api/Peers/{peerId}/heartbeat",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "peerId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

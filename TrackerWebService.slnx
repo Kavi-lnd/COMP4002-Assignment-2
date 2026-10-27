@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="PeerApplication/PeerApplication.csproj" Id="2189ecda-2a56-4824-b390-dbacfae3bfd3" />
+  <Project Path="TrackerWebService/TrackerWebService.csproj" />
+</Solution>

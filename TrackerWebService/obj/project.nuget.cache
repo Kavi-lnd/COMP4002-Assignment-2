@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "iASSpcwvM5o=",
+  "success": true,
+  "projectFilePath": "C:\\DC_22377087\\DC_2\\TrackerWebService\\TrackerWebService\\TrackerWebService.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kavil\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.11\\microsoft.aspnetcore.openapi.10.0.11.nupkg.sha512",
+    "C:\\Users\\kavil\\.nuget\\packages\\microsoft.openapi\\2.7.5\\microsoft.openapi.2.7.5.nupkg.sha512",
+    "C:\\Users\\kavil\\.nuget\\packages\\stub.system.data.sqlite.core.netstandard\\1.0.119\\stub.system.data.sqlite.core.netstandard.1.0.119.nupkg.sha512",
+    "C:\\Users\\kavil\\.nuget\\packages\\system.data.sqlite.core\\1.0.119\\system.data.sqlite.core.1.0.119.nupkg.sha512"
+  ],
+  "logs": []
+}

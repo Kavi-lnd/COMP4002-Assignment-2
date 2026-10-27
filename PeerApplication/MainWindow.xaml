@@ -1,0 +1,163 @@
+﻿<Window x:Class="PeerApplication.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PeerApplication"
+        mc:Ignorable="d"
+        Title="Peer Job Application"
+        Height="750"
+        Width="850"
+        MinHeight="650"
+        MinWidth="700"
+        WindowStartupLocation="CenterScreen">
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0"
+                   Text="PEER JOB APPLICATION"
+                   FontSize="24"
+                   FontWeight="Bold"
+                   Margin="0,0,0,15"/>
+
+        <GroupBox Grid.Row="1"
+                  Header="Peer Registration"
+                  Padding="10"
+                  Margin="0,0,0,15">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Grid.Row="0" Grid.Column="0"
+                           Text="Peer ID:"
+                           VerticalAlignment="Center"
+                           Margin="0,5,10,5"/>
+
+                <TextBox x:Name="PeerIdTextBox"
+                         Grid.Row="0" Grid.Column="1"
+                         Text="peer1"
+                         Margin="0,5,15,5"/>
+
+                <TextBlock Grid.Row="0" Grid.Column="2"
+                           Text="IP Address:"
+                           VerticalAlignment="Center"
+                           Margin="0,5,10,5"/>
+
+                <TextBox x:Name="IpAddressTextBox"
+                         Grid.Row="0" Grid.Column="3"
+                         Text="127.0.0.1"
+                         Margin="0,5,0,5"/>
+
+                <TextBlock Grid.Row="1" Grid.Column="0"
+                           Text="WCF Port:"
+                           VerticalAlignment="Center"
+                           Margin="0,5,10,5"/>
+
+                <TextBox x:Name="WcfPortTextBox"
+                         Grid.Row="1" Grid.Column="1"
+                         Text="8080"
+                         Margin="0,5,15,5"/>
+
+                <Button x:Name="RegisterPeerButton"
+                        Grid.Row="2" Grid.Column="0"
+                        Grid.ColumnSpan="2"
+                        Content="Register with Tracker"
+                        Height="32"
+                        Width="160"
+                        Margin="0,10,0,0"
+                        HorizontalAlignment="Left"/>
+
+                <TextBlock Grid.Row="2" Grid.Column="2"
+                           Grid.ColumnSpan="2"
+                           Text="Tracker: https://localhost:7083"
+                           VerticalAlignment="Center"
+                           Margin="10,10,0,0"
+                           TextWrapping="Wrap"/>
+            </Grid>
+        </GroupBox>
+
+        <GroupBox Grid.Row="2"
+                  Header="Job Details"
+                  Padding="12"
+                  Margin="0,0,0,15">
+            <StackPanel>
+                <TextBlock Text="Python code:"
+                           Margin="0,0,0,6"/>
+
+                <TextBox x:Name="PythonCodeTextBox"
+                         Height="100"
+                         AcceptsReturn="True"
+                         TextWrapping="Wrap"
+                         VerticalScrollBarVisibility="Auto"
+                         HorizontalScrollBarVisibility="Auto"
+                         FontFamily="Consolas"
+                         Text="def calculate(x):&#10;    return x * x"/>
+            </StackPanel>
+        </GroupBox>
+
+        <GroupBox Grid.Row="3"
+                  Header="Job Output"
+                  Padding="12"
+                  Margin="0,0,0,15">
+            <TextBox x:Name="OutputTextBox"
+                     IsReadOnly="True"
+                     TextWrapping="Wrap"
+                     AcceptsReturn="True"
+                     VerticalScrollBarVisibility="Auto"
+                     Text="No jobs processed yet."/>
+        </GroupBox>
+
+        <StackPanel Grid.Row="4"
+                    Orientation="Horizontal"
+                    Margin="0,0,0,15">
+            <Button x:Name="SubmitJobButton"
+                    Content="Submit Job"
+                    Width="120"
+                    Height="35"
+                    Margin="0,0,12,0"/>
+
+            <Button x:Name="LoadFileButton"
+        Content="Load Python File"
+        Width="140"
+        Height="35"
+        Margin="0,0,12,0"/>
+
+            <Button x:Name="GetJobsButton"
+        Content="Get Available Jobs"
+        Width="150"
+        Height="35"/>
+        </StackPanel>
+
+        <StatusBar Grid.Row="5">
+            <StatusBarItem>
+                <TextBlock x:Name="StatusTextBlock"
+                           Text="Status: Idle"/>
+            </StatusBarItem>
+
+            <Separator/>
+
+            <StatusBarItem>
+                <TextBlock x:Name="CompletedJobsTextBlock"
+                           Text="Completed Jobs: 0"/>
+            </StatusBarItem>
+        </StatusBar>
+    </Grid>
+</Window>

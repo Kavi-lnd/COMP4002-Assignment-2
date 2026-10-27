@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "PeerApplication\\PeerApplication.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "TrackerWebService\\TrackerWebService.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

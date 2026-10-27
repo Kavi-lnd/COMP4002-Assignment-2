@@ -1,0 +1,189 @@
+{
+  "openapi": "3.1.1",
+  "info": {
+    "title": "TrackerWebService | v1",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://localhost:7083"
+    },
+    {
+      "url": "http://localhost:5169"
+    }
+  ],
+  "paths": {
+    "/api/CompletedJobs": {
+      "post": {
+        "tags": [
+          "CompletedJobs"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CompletedJobRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CompletedJobRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CompletedJobRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/CompletedJobs/count/{peerId}": {
+      "get": {
+        "tags": [
+          "CompletedJobs"
+        ],
+        "parameters": [
+          {
+            "name": "peerId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/CompletedJobs/peer-summary": {
+      "get": {
+        "tags": [
+          "CompletedJobs"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Peers": {
+      "get": {
+        "tags": [
+          "Peers"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Peers"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PeerRegistrationRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PeerRegistrationRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/PeerRegistrationRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Peers/{peerId}/heartbeat": {
+      "put": {
+        "tags": [
+          "Peers"
+        ],
+        "parameters": [
+          {
+            "name": "peerId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "CompletedJobRequest": {
+        "type": "object",
+        "properties": {
+          "peerId": {
+            "type": "string"
+          },
+          "jobId": {
+            "type": "string"
+          }
+        }
+      },
+      "PeerRegistrationRequest": {
+        "type": "object",
+        "properties": {
+          "peerId": {
+            "type": "string"
+          },
+          "ipAddress": {
+            "type": "string"
+          },
+          "wcfPort": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          }
+        }
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "CompletedJobs"
+    },
+    {
+      "name": "Peers"
+    }
+  ]
+}

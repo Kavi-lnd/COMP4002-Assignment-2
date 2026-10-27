@@ -1,0 +1,16 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+
+namespace PeerApplication.Models
+{
+    public class JobSummary
+    {
+        public string JobId { get; set; }
+        public string FunctionName { get; set; }
+    }
+}
+
