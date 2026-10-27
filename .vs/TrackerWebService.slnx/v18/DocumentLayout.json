@@ -3,84 +3,84 @@
   "WorkspaceRootPath": "C:\\DC_22377087\\DC_2\\TrackerWebService\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F6197D42-1809-34D9-A494-4CB70D271D50}|TrackerWebService\\TrackerWebService.csproj|c:\\dc_22377087\\dc_2\\trackerwebservice\\trackerwebservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F6197D42-1809-34D9-A494-4CB70D271D50}|TrackerWebService\\TrackerWebService.csproj|solutionrelative:trackerwebservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2189ECDA-2A56-4824-B390-DBACFAE3BFD3}|PeerApplication\\PeerApplication.csproj|C:\\DC_22377087\\DC_2\\TrackerWebService\\peerapplication\\pythonexecutor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2189ECDA-2A56-4824-B390-DBACFAE3BFD3}|PeerApplication\\PeerApplication.csproj|solutionrelative:peerapplication\\pythonexecutor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2189ECDA-2A56-4824-B390-DBACFAE3BFD3}|PeerApplication\\PeerApplication.csproj|C:\\DC_22377087\\DC_2\\TrackerWebService\\peerapplication\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2189ECDA-2A56-4824-B390-DBACFAE3BFD3}|PeerApplication\\PeerApplication.csproj|solutionrelative:peerapplication\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2189ECDA-2A56-4824-B390-DBACFAE3BFD3}|PeerApplication\\PeerApplication.csproj|C:\\DC_22377087\\DC_2\\TrackerWebService\\peerapplication\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{2189ECDA-2A56-4824-B390-DBACFAE3BFD3}|PeerApplication\\PeerApplication.csproj|solutionrelative:peerapplication\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2189ECDA-2A56-4824-B390-DBACFAE3BFD3}|PeerApplication\\PeerApplication.csproj|C:\\DC_22377087\\DC_2\\TrackerWebService\\peerapplication\\jobserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2189ECDA-2A56-4824-B390-DBACFAE3BFD3}|PeerApplication\\PeerApplication.csproj|solutionrelative:peerapplication\\jobserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2189ECDA-2A56-4824-B390-DBACFAE3BFD3}|PeerApplication\\PeerApplication.csproj|C:\\DC_22377087\\DC_2\\TrackerWebService\\peerapplication\\jobclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2189ECDA-2A56-4824-B390-DBACFAE3BFD3}|PeerApplication\\PeerApplication.csproj|solutionrelative:peerapplication\\jobclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2189ECDA-2A56-4824-B390-DBACFAE3BFD3}|PeerApplication\\PeerApplication.csproj|C:\\DC_22377087\\DC_2\\TrackerWebService\\peerapplication\\services\\jobservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2189ECDA-2A56-4824-B390-DBACFAE3BFD3}|PeerApplication\\PeerApplication.csproj|solutionrelative:peerapplication\\services\\jobservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2189ECDA-2A56-4824-B390-DBACFAE3BFD3}|PeerApplication\\PeerApplication.csproj|C:\\DC_22377087\\DC_2\\TrackerWebService\\peerapplication\\services\\ijobservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2189ECDA-2A56-4824-B390-DBACFAE3BFD3}|PeerApplication\\PeerApplication.csproj|solutionrelative:peerapplication\\services\\ijobservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2189ECDA-2A56-4824-B390-DBACFAE3BFD3}|PeerApplication\\PeerApplication.csproj|C:\\DC_22377087\\DC_2\\TrackerWebService\\peerapplication\\networking\\peernetworking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2189ECDA-2A56-4824-B390-DBACFAE3BFD3}|PeerApplication\\PeerApplication.csproj|solutionrelative:peerapplication\\networking\\peernetworking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2189ECDA-2A56-4824-B390-DBACFAE3BFD3}|PeerApplication\\PeerApplication.csproj|C:\\DC_22377087\\DC_2\\TrackerWebService\\peerapplication\\models\\peerregistrationrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2189ECDA-2A56-4824-B390-DBACFAE3BFD3}|PeerApplication\\PeerApplication.csproj|solutionrelative:peerapplication\\models\\peerregistrationrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2189ECDA-2A56-4824-B390-DBACFAE3BFD3}|PeerApplication\\PeerApplication.csproj|C:\\DC_22377087\\DC_2\\TrackerWebService\\peerapplication\\models\\peerinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2189ECDA-2A56-4824-B390-DBACFAE3BFD3}|PeerApplication\\PeerApplication.csproj|solutionrelative:peerapplication\\models\\peerinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2189ECDA-2A56-4824-B390-DBACFAE3BFD3}|PeerApplication\\PeerApplication.csproj|C:\\DC_22377087\\DC_2\\TrackerWebService\\peerapplication\\models\\jobsummary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2189ECDA-2A56-4824-B390-DBACFAE3BFD3}|PeerApplication\\PeerApplication.csproj|solutionrelative:peerapplication\\models\\jobsummary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2189ECDA-2A56-4824-B390-DBACFAE3BFD3}|PeerApplication\\PeerApplication.csproj|C:\\DC_22377087\\DC_2\\TrackerWebService\\peerapplication\\data\\jobmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2189ECDA-2A56-4824-B390-DBACFAE3BFD3}|PeerApplication\\PeerApplication.csproj|solutionrelative:peerapplication\\data\\jobmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2189ECDA-2A56-4824-B390-DBACFAE3BFD3}|PeerApplication\\PeerApplication.csproj|C:\\DC_22377087\\DC_2\\TrackerWebService\\peerapplication\\models\\job.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2189ECDA-2A56-4824-B390-DBACFAE3BFD3}|PeerApplication\\PeerApplication.csproj|solutionrelative:peerapplication\\models\\job.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2189ECDA-2A56-4824-B390-DBACFAE3BFD3}|PeerApplication\\PeerApplication.csproj|C:\\DC_22377087\\DC_2\\TrackerWebService\\peerapplication\\data\\jobmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2189ECDA-2A56-4824-B390-DBACFAE3BFD3}|PeerApplication\\PeerApplication.csproj|solutionrelative:peerapplication\\data\\jobmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2189ECDA-2A56-4824-B390-DBACFAE3BFD3}|PeerApplication\\PeerApplication.csproj|C:\\DC_22377087\\DC_2\\TrackerWebService\\peerapplication\\models\\jobsummary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2189ECDA-2A56-4824-B390-DBACFAE3BFD3}|PeerApplication\\PeerApplication.csproj|solutionrelative:peerapplication\\models\\jobsummary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F6197D42-1809-34D9-A494-4CB70D271D50}|TrackerWebService\\TrackerWebService.csproj|c:\\dc_22377087\\dc_2\\trackerwebservice\\trackerwebservice\\services\\stalepeercleanupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F6197D42-1809-34D9-A494-4CB70D271D50}|TrackerWebService\\TrackerWebService.csproj|solutionrelative:trackerwebservice\\services\\stalepeercleanupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2189ECDA-2A56-4824-B390-DBACFAE3BFD3}|PeerApplication\\PeerApplication.csproj|C:\\DC_22377087\\DC_2\\TrackerWebService\\peerapplication\\models\\peerinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2189ECDA-2A56-4824-B390-DBACFAE3BFD3}|PeerApplication\\PeerApplication.csproj|solutionrelative:peerapplication\\models\\peerinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F6197D42-1809-34D9-A494-4CB70D271D50}|TrackerWebService\\TrackerWebService.csproj|c:\\dc_22377087\\dc_2\\trackerwebservice\\trackerwebservice\\models\\peerresgistrationrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F6197D42-1809-34D9-A494-4CB70D271D50}|TrackerWebService\\TrackerWebService.csproj|solutionrelative:trackerwebservice\\models\\peerresgistrationrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2189ECDA-2A56-4824-B390-DBACFAE3BFD3}|PeerApplication\\PeerApplication.csproj|C:\\DC_22377087\\DC_2\\TrackerWebService\\peerapplication\\models\\peerregistrationrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2189ECDA-2A56-4824-B390-DBACFAE3BFD3}|PeerApplication\\PeerApplication.csproj|solutionrelative:peerapplication\\models\\peerregistrationrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F6197D42-1809-34D9-A494-4CB70D271D50}|TrackerWebService\\TrackerWebService.csproj|c:\\dc_22377087\\dc_2\\trackerwebservice\\trackerwebservice\\models\\peer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F6197D42-1809-34D9-A494-4CB70D271D50}|TrackerWebService\\TrackerWebService.csproj|solutionrelative:trackerwebservice\\models\\peer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2189ECDA-2A56-4824-B390-DBACFAE3BFD3}|PeerApplication\\PeerApplication.csproj|C:\\DC_22377087\\DC_2\\TrackerWebService\\peerapplication\\networking\\peernetworking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2189ECDA-2A56-4824-B390-DBACFAE3BFD3}|PeerApplication\\PeerApplication.csproj|solutionrelative:peerapplication\\networking\\peernetworking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F6197D42-1809-34D9-A494-4CB70D271D50}|TrackerWebService\\TrackerWebService.csproj|c:\\dc_22377087\\dc_2\\trackerwebservice\\trackerwebservice\\data\\dbmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F6197D42-1809-34D9-A494-4CB70D271D50}|TrackerWebService\\TrackerWebService.csproj|solutionrelative:trackerwebservice\\data\\dbmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2189ECDA-2A56-4824-B390-DBACFAE3BFD3}|PeerApplication\\PeerApplication.csproj|C:\\DC_22377087\\DC_2\\TrackerWebService\\peerapplication\\services\\ijobservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2189ECDA-2A56-4824-B390-DBACFAE3BFD3}|PeerApplication\\PeerApplication.csproj|solutionrelative:peerapplication\\services\\ijobservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2189ECDA-2A56-4824-B390-DBACFAE3BFD3}|PeerApplication\\PeerApplication.csproj|C:\\DC_22377087\\DC_2\\TrackerWebService\\peerapplication\\services\\jobservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2189ECDA-2A56-4824-B390-DBACFAE3BFD3}|PeerApplication\\PeerApplication.csproj|solutionrelative:peerapplication\\services\\jobservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2189ECDA-2A56-4824-B390-DBACFAE3BFD3}|PeerApplication\\PeerApplication.csproj|C:\\DC_22377087\\DC_2\\TrackerWebService\\peerapplication\\jobclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2189ECDA-2A56-4824-B390-DBACFAE3BFD3}|PeerApplication\\PeerApplication.csproj|solutionrelative:peerapplication\\jobclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2189ECDA-2A56-4824-B390-DBACFAE3BFD3}|PeerApplication\\PeerApplication.csproj|C:\\DC_22377087\\DC_2\\TrackerWebService\\peerapplication\\jobserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2189ECDA-2A56-4824-B390-DBACFAE3BFD3}|PeerApplication\\PeerApplication.csproj|solutionrelative:peerapplication\\jobserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2189ECDA-2A56-4824-B390-DBACFAE3BFD3}|PeerApplication\\PeerApplication.csproj|C:\\DC_22377087\\DC_2\\TrackerWebService\\peerapplication\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2189ECDA-2A56-4824-B390-DBACFAE3BFD3}|PeerApplication\\PeerApplication.csproj|solutionrelative:peerapplication\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2189ECDA-2A56-4824-B390-DBACFAE3BFD3}|PeerApplication\\PeerApplication.csproj|C:\\DC_22377087\\DC_2\\TrackerWebService\\peerapplication\\pythonexecutor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2189ECDA-2A56-4824-B390-DBACFAE3BFD3}|PeerApplication\\PeerApplication.csproj|solutionrelative:peerapplication\\pythonexecutor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6197D42-1809-34D9-A494-4CB70D271D50}|TrackerWebService\\TrackerWebService.csproj|c:\\dc_22377087\\dc_2\\trackerwebservice\\trackerwebservice\\controllers\\completedjobscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6197D42-1809-34D9-A494-4CB70D271D50}|TrackerWebService\\TrackerWebService.csproj|solutionrelative:trackerwebservice\\controllers\\completedjobscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F6197D42-1809-34D9-A494-4CB70D271D50}|TrackerWebService\\TrackerWebService.csproj|c:\\dc_22377087\\dc_2\\trackerwebservice\\trackerwebservice\\controllers\\peerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F6197D42-1809-34D9-A494-4CB70D271D50}|TrackerWebService\\TrackerWebService.csproj|solutionrelative:trackerwebservice\\controllers\\peerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F6197D42-1809-34D9-A494-4CB70D271D50}|TrackerWebService\\TrackerWebService.csproj|c:\\dc_22377087\\dc_2\\trackerwebservice\\trackerwebservice\\controllers\\completedjobscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F6197D42-1809-34D9-A494-4CB70D271D50}|TrackerWebService\\TrackerWebService.csproj|solutionrelative:trackerwebservice\\controllers\\completedjobscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F6197D42-1809-34D9-A494-4CB70D271D50}|TrackerWebService\\TrackerWebService.csproj|c:\\dc_22377087\\dc_2\\trackerwebservice\\trackerwebservice\\data\\dbmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6197D42-1809-34D9-A494-4CB70D271D50}|TrackerWebService\\TrackerWebService.csproj|solutionrelative:trackerwebservice\\data\\dbmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6197D42-1809-34D9-A494-4CB70D271D50}|TrackerWebService\\TrackerWebService.csproj|c:\\dc_22377087\\dc_2\\trackerwebservice\\trackerwebservice\\models\\peer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6197D42-1809-34D9-A494-4CB70D271D50}|TrackerWebService\\TrackerWebService.csproj|solutionrelative:trackerwebservice\\models\\peer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6197D42-1809-34D9-A494-4CB70D271D50}|TrackerWebService\\TrackerWebService.csproj|c:\\dc_22377087\\dc_2\\trackerwebservice\\trackerwebservice\\models\\peerresgistrationrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6197D42-1809-34D9-A494-4CB70D271D50}|TrackerWebService\\TrackerWebService.csproj|solutionrelative:trackerwebservice\\models\\peerresgistrationrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6197D42-1809-34D9-A494-4CB70D271D50}|TrackerWebService\\TrackerWebService.csproj|c:\\dc_22377087\\dc_2\\trackerwebservice\\trackerwebservice\\services\\stalepeercleanupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6197D42-1809-34D9-A494-4CB70D271D50}|TrackerWebService\\TrackerWebService.csproj|solutionrelative:trackerwebservice\\services\\stalepeercleanupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6197D42-1809-34D9-A494-4CB70D271D50}|TrackerWebService\\TrackerWebService.csproj|c:\\dc_22377087\\dc_2\\trackerwebservice\\trackerwebservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6197D42-1809-34D9-A494-4CB70D271D50}|TrackerWebService\\TrackerWebService.csproj|solutionrelative:trackerwebservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2189ECDA-2A56-4824-B390-DBACFAE3BFD3}|PeerApplication\\PeerApplication.csproj|C:\\DC_22377087\\DC_2\\TrackerWebService\\peerapplication\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2189ECDA-2A56-4824-B390-DBACFAE3BFD3}|PeerApplication\\PeerApplication.csproj|solutionrelative:peerapplication\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F6197D42-1809-34D9-A494-4CB70D271D50}|TrackerWebService\\TrackerWebService.csproj|c:\\dc_22377087\\dc_2\\trackerwebservice\\trackerwebservice\\trackerwebservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -94,7 +94,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -105,256 +105,251 @@
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "StalePeerCleanupService.cs",
-              "DocumentMoniker": "C:\\DC_22377087\\DC_2\\TrackerWebService\\TrackerWebService\\Services\\StalePeerCleanupService.cs",
-              "RelativeDocumentMoniker": "TrackerWebService\\Services\\StalePeerCleanupService.cs",
-              "ToolTip": "C:\\DC_22377087\\DC_2\\TrackerWebService\\TrackerWebService\\Services\\StalePeerCleanupService.cs",
-              "RelativeToolTip": "TrackerWebService\\Services\\StalePeerCleanupService.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAIwBUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-25T06:40:00.054Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\DC_22377087\\DC_2\\TrackerWebService\\TrackerWebService\\Program.cs",
-              "RelativeDocumentMoniker": "TrackerWebService\\Program.cs",
-              "ToolTip": "C:\\DC_22377087\\DC_2\\TrackerWebService\\TrackerWebService\\Program.cs",
-              "RelativeToolTip": "TrackerWebService\\Program.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAcwBcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-25T06:07:49.726Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{c9c0ae26-aa77-11d2-b3f0-0000f87570ee}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "PeerResgistrationRequest.cs",
-              "DocumentMoniker": "C:\\DC_22377087\\DC_2\\TrackerWebService\\TrackerWebService\\Models\\PeerResgistrationRequest.cs",
-              "RelativeDocumentMoniker": "TrackerWebService\\Models\\PeerResgistrationRequest.cs",
-              "ToolTip": "C:\\DC_22377087\\DC_2\\TrackerWebService\\TrackerWebService\\Models\\PeerResgistrationRequest.cs",
-              "RelativeToolTip": "TrackerWebService\\Models\\PeerResgistrationRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-25T06:28:27.162Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Peer.cs",
-              "DocumentMoniker": "C:\\DC_22377087\\DC_2\\TrackerWebService\\TrackerWebService\\Models\\Peer.cs",
-              "RelativeDocumentMoniker": "TrackerWebService\\Models\\Peer.cs",
-              "ToolTip": "C:\\DC_22377087\\DC_2\\TrackerWebService\\TrackerWebService\\Models\\Peer.cs",
-              "RelativeToolTip": "TrackerWebService\\Models\\Peer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-25T06:26:56.498Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "DBManager.cs",
-              "DocumentMoniker": "C:\\DC_22377087\\DC_2\\TrackerWebService\\TrackerWebService\\Data\\DBManager.cs",
-              "RelativeDocumentMoniker": "TrackerWebService\\Data\\DBManager.cs",
-              "ToolTip": "C:\\DC_22377087\\DC_2\\TrackerWebService\\TrackerWebService\\Data\\DBManager.cs",
-              "RelativeToolTip": "TrackerWebService\\Data\\DBManager.cs",
-              "ViewState": "AgIAALMAAAAAAAAAAAAcwMcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-25T06:15:32.475Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "PeersController.cs",
-              "DocumentMoniker": "C:\\DC_22377087\\DC_2\\TrackerWebService\\TrackerWebService\\Controllers\\PeersController.cs",
-              "RelativeDocumentMoniker": "TrackerWebService\\Controllers\\PeersController.cs",
-              "ToolTip": "C:\\DC_22377087\\DC_2\\TrackerWebService\\TrackerWebService\\Controllers\\PeersController.cs",
-              "RelativeToolTip": "TrackerWebService\\Controllers\\PeersController.cs",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAcwE0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-25T06:25:21.159Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "CompletedJobsController.cs",
-              "DocumentMoniker": "C:\\DC_22377087\\DC_2\\TrackerWebService\\TrackerWebService\\Controllers\\CompletedJobsController.cs",
-              "RelativeDocumentMoniker": "TrackerWebService\\Controllers\\CompletedJobsController.cs",
-              "ToolTip": "C:\\DC_22377087\\DC_2\\TrackerWebService\\TrackerWebService\\Controllers\\CompletedJobsController.cs",
-              "RelativeToolTip": "TrackerWebService\\Controllers\\CompletedJobsController.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAUwFEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-25T06:44:34.364Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PythonExecutor.cs",
-              "DocumentMoniker": "C:\\DC_22377087\\DC_2\\TrackerWebService\\PeerApplication\\PythonExecutor.cs",
-              "RelativeDocumentMoniker": "PeerApplication\\PythonExecutor.cs",
-              "ToolTip": "C:\\DC_22377087\\DC_2\\TrackerWebService\\PeerApplication\\PythonExecutor.cs",
-              "RelativeToolTip": "PeerApplication\\PythonExecutor.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAcwDMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-26T13:45:22.548Z"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\DC_22377087\\DC_2\\TrackerWebService\\PeerApplication\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "PeerApplication\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\DC_22377087\\DC_2\\TrackerWebService\\PeerApplication\\MainWindow.xaml.cs",
-              "RelativeToolTip": "PeerApplication\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAAMBAAAAAAAAAAAUwBYBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-25T06:54:33.613Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\DC_22377087\\DC_2\\TrackerWebService\\PeerApplication\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "PeerApplication\\MainWindow.xaml",
-              "ToolTip": "C:\\DC_22377087\\DC_2\\TrackerWebService\\PeerApplication\\MainWindow.xaml",
-              "RelativeToolTip": "PeerApplication\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-10-25T06:54:34.143Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "JobServer.cs",
-              "DocumentMoniker": "C:\\DC_22377087\\DC_2\\TrackerWebService\\PeerApplication\\JobServer.cs",
-              "RelativeDocumentMoniker": "PeerApplication\\JobServer.cs",
-              "ToolTip": "C:\\DC_22377087\\DC_2\\TrackerWebService\\PeerApplication\\JobServer.cs",
-              "RelativeToolTip": "PeerApplication\\JobServer.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAUwCgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-26T12:18:17.693Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "JobClient.cs",
-              "DocumentMoniker": "C:\\DC_22377087\\DC_2\\TrackerWebService\\PeerApplication\\JobClient.cs",
-              "RelativeDocumentMoniker": "PeerApplication\\JobClient.cs",
-              "ToolTip": "C:\\DC_22377087\\DC_2\\TrackerWebService\\PeerApplication\\JobClient.cs",
-              "RelativeToolTip": "PeerApplication\\JobClient.cs",
-              "ViewState": "AgIAAF4AAAAAAAAAAAAcwHIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-26T13:08:45.178Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "JobService.cs",
-              "DocumentMoniker": "C:\\DC_22377087\\DC_2\\TrackerWebService\\PeerApplication\\Services\\JobService.cs",
-              "RelativeDocumentMoniker": "PeerApplication\\Services\\JobService.cs",
-              "ToolTip": "C:\\DC_22377087\\DC_2\\TrackerWebService\\PeerApplication\\Services\\JobService.cs",
-              "RelativeToolTip": "PeerApplication\\Services\\JobService.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAIwDsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-26T11:58:44.152Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "IJobService.cs",
-              "DocumentMoniker": "C:\\DC_22377087\\DC_2\\TrackerWebService\\PeerApplication\\Services\\IJobService.cs",
-              "RelativeDocumentMoniker": "PeerApplication\\Services\\IJobService.cs",
-              "ToolTip": "C:\\DC_22377087\\DC_2\\TrackerWebService\\PeerApplication\\Services\\IJobService.cs",
-              "RelativeToolTip": "PeerApplication\\Services\\IJobService.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAswBoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-25T07:09:42.249Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "PeerNetworking.cs",
-              "DocumentMoniker": "C:\\DC_22377087\\DC_2\\TrackerWebService\\PeerApplication\\Networking\\PeerNetworking.cs",
-              "RelativeDocumentMoniker": "PeerApplication\\Networking\\PeerNetworking.cs",
-              "ToolTip": "C:\\DC_22377087\\DC_2\\TrackerWebService\\PeerApplication\\Networking\\PeerNetworking.cs",
-              "RelativeToolTip": "PeerApplication\\Networking\\PeerNetworking.cs",
-              "ViewState": "AgIAAMQAAAAAAAAAAAAUwNcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-26T13:57:53.089Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "PeerRegistrationRequest.cs",
-              "DocumentMoniker": "C:\\DC_22377087\\DC_2\\TrackerWebService\\PeerApplication\\Models\\PeerRegistrationRequest.cs",
-              "RelativeDocumentMoniker": "PeerApplication\\Models\\PeerRegistrationRequest.cs",
-              "ToolTip": "C:\\DC_22377087\\DC_2\\TrackerWebService\\PeerApplication\\Models\\PeerRegistrationRequest.cs",
-              "RelativeToolTip": "PeerApplication\\Models\\PeerRegistrationRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-25T07:00:52.887Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "PeerInfo.cs",
-              "DocumentMoniker": "C:\\DC_22377087\\DC_2\\TrackerWebService\\PeerApplication\\Models\\PeerInfo.cs",
-              "RelativeDocumentMoniker": "PeerApplication\\Models\\PeerInfo.cs",
-              "ToolTip": "C:\\DC_22377087\\DC_2\\TrackerWebService\\PeerApplication\\Models\\PeerInfo.cs",
-              "RelativeToolTip": "PeerApplication\\Models\\PeerInfo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-26T14:00:18.683Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
               "Title": "JobSummary.cs",
               "DocumentMoniker": "C:\\DC_22377087\\DC_2\\TrackerWebService\\PeerApplication\\Models\\JobSummary.cs",
               "RelativeDocumentMoniker": "PeerApplication\\Models\\JobSummary.cs",
               "ToolTip": "C:\\DC_22377087\\DC_2\\TrackerWebService\\PeerApplication\\Models\\JobSummary.cs",
               "RelativeToolTip": "PeerApplication\\Models\\JobSummary.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-25T07:06:57.004Z"
+              "WhenOpened": "2026-10-25T07:06:57.004Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 1,
               "Title": "Job.cs",
               "DocumentMoniker": "C:\\DC_22377087\\DC_2\\TrackerWebService\\PeerApplication\\Models\\Job.cs",
               "RelativeDocumentMoniker": "PeerApplication\\Models\\Job.cs",
               "ToolTip": "C:\\DC_22377087\\DC_2\\TrackerWebService\\PeerApplication\\Models\\Job.cs",
               "RelativeToolTip": "PeerApplication\\Models\\Job.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAgwBYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAzwB4AAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-25T07:06:11.46Z"
+              "WhenOpened": "2026-10-25T07:06:11.46Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 0,
               "Title": "JobManager.cs",
               "DocumentMoniker": "C:\\DC_22377087\\DC_2\\TrackerWebService\\PeerApplication\\Data\\JobManager.cs",
               "RelativeDocumentMoniker": "PeerApplication\\Data\\JobManager.cs",
               "ToolTip": "C:\\DC_22377087\\DC_2\\TrackerWebService\\PeerApplication\\Data\\JobManager.cs",
               "RelativeToolTip": "PeerApplication\\Data\\JobManager.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAcwFYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-26T12:00:29.758Z"
+              "WhenOpened": "2026-10-26T12:00:29.758Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PeerInfo.cs",
+              "DocumentMoniker": "C:\\DC_22377087\\DC_2\\TrackerWebService\\PeerApplication\\Models\\PeerInfo.cs",
+              "RelativeDocumentMoniker": "PeerApplication\\Models\\PeerInfo.cs",
+              "ToolTip": "C:\\DC_22377087\\DC_2\\TrackerWebService\\PeerApplication\\Models\\PeerInfo.cs",
+              "RelativeToolTip": "PeerApplication\\Models\\PeerInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-26T14:00:18.683Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PeerRegistrationRequest.cs",
+              "DocumentMoniker": "C:\\DC_22377087\\DC_2\\TrackerWebService\\PeerApplication\\Models\\PeerRegistrationRequest.cs",
+              "RelativeDocumentMoniker": "PeerApplication\\Models\\PeerRegistrationRequest.cs",
+              "ToolTip": "C:\\DC_22377087\\DC_2\\TrackerWebService\\PeerApplication\\Models\\PeerRegistrationRequest.cs",
+              "RelativeToolTip": "PeerApplication\\Models\\PeerRegistrationRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-25T07:00:52.887Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PeerNetworking.cs",
+              "DocumentMoniker": "C:\\DC_22377087\\DC_2\\TrackerWebService\\PeerApplication\\Networking\\PeerNetworking.cs",
+              "RelativeDocumentMoniker": "PeerApplication\\Networking\\PeerNetworking.cs",
+              "ToolTip": "C:\\DC_22377087\\DC_2\\TrackerWebService\\PeerApplication\\Networking\\PeerNetworking.cs",
+              "RelativeToolTip": "PeerApplication\\Networking\\PeerNetworking.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAK4AAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-26T13:57:53.089Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "JobService.cs",
+              "DocumentMoniker": "C:\\DC_22377087\\DC_2\\TrackerWebService\\PeerApplication\\Services\\JobService.cs",
+              "RelativeDocumentMoniker": "PeerApplication\\Services\\JobService.cs",
+              "ToolTip": "C:\\DC_22377087\\DC_2\\TrackerWebService\\PeerApplication\\Services\\JobService.cs",
+              "RelativeToolTip": "PeerApplication\\Services\\JobService.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAzwBgAAABZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-26T11:58:44.152Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "JobClient.cs",
+              "DocumentMoniker": "C:\\DC_22377087\\DC_2\\TrackerWebService\\PeerApplication\\JobClient.cs",
+              "RelativeDocumentMoniker": "PeerApplication\\JobClient.cs",
+              "ToolTip": "C:\\DC_22377087\\DC_2\\TrackerWebService\\PeerApplication\\JobClient.cs",
+              "RelativeToolTip": "PeerApplication\\JobClient.cs",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAkwE8AAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-26T13:08:45.178Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IJobService.cs",
+              "DocumentMoniker": "C:\\DC_22377087\\DC_2\\TrackerWebService\\PeerApplication\\Services\\IJobService.cs",
+              "RelativeDocumentMoniker": "PeerApplication\\Services\\IJobService.cs",
+              "ToolTip": "C:\\DC_22377087\\DC_2\\TrackerWebService\\PeerApplication\\Services\\IJobService.cs",
+              "RelativeToolTip": "PeerApplication\\Services\\IJobService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-25T07:09:42.249Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "JobServer.cs",
+              "DocumentMoniker": "C:\\DC_22377087\\DC_2\\TrackerWebService\\PeerApplication\\JobServer.cs",
+              "RelativeDocumentMoniker": "PeerApplication\\JobServer.cs",
+              "ToolTip": "C:\\DC_22377087\\DC_2\\TrackerWebService\\PeerApplication\\JobServer.cs",
+              "RelativeToolTip": "PeerApplication\\JobServer.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB8AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-26T12:18:17.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\DC_22377087\\DC_2\\TrackerWebService\\PeerApplication\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "PeerApplication\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\DC_22377087\\DC_2\\TrackerWebService\\PeerApplication\\MainWindow.xaml.cs",
+              "RelativeToolTip": "PeerApplication\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAP4AAAAAAAAAAAAwwA0BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-25T06:54:33.613Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PythonExecutor.cs",
+              "DocumentMoniker": "C:\\DC_22377087\\DC_2\\TrackerWebService\\PeerApplication\\PythonExecutor.cs",
+              "RelativeDocumentMoniker": "PeerApplication\\PythonExecutor.cs",
+              "ToolTip": "C:\\DC_22377087\\DC_2\\TrackerWebService\\PeerApplication\\PythonExecutor.cs",
+              "RelativeToolTip": "PeerApplication\\PythonExecutor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-26T13:45:22.548Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CompletedJobsController.cs",
+              "DocumentMoniker": "C:\\DC_22377087\\DC_2\\TrackerWebService\\TrackerWebService\\Controllers\\CompletedJobsController.cs",
+              "RelativeDocumentMoniker": "TrackerWebService\\Controllers\\CompletedJobsController.cs",
+              "ToolTip": "C:\\DC_22377087\\DC_2\\TrackerWebService\\TrackerWebService\\Controllers\\CompletedJobsController.cs",
+              "RelativeToolTip": "TrackerWebService\\Controllers\\CompletedJobsController.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAkwEYAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-25T06:44:34.364Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "PeersController.cs",
+              "DocumentMoniker": "C:\\DC_22377087\\DC_2\\TrackerWebService\\TrackerWebService\\Controllers\\PeersController.cs",
+              "RelativeDocumentMoniker": "TrackerWebService\\Controllers\\PeersController.cs",
+              "ToolTip": "C:\\DC_22377087\\DC_2\\TrackerWebService\\TrackerWebService\\Controllers\\PeersController.cs",
+              "RelativeToolTip": "TrackerWebService\\Controllers\\PeersController.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAYwEMAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-25T06:25:21.159Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "DBManager.cs",
+              "DocumentMoniker": "C:\\DC_22377087\\DC_2\\TrackerWebService\\TrackerWebService\\Data\\DBManager.cs",
+              "RelativeDocumentMoniker": "TrackerWebService\\Data\\DBManager.cs",
+              "ToolTip": "C:\\DC_22377087\\DC_2\\TrackerWebService\\TrackerWebService\\Data\\DBManager.cs",
+              "RelativeToolTip": "TrackerWebService\\Data\\DBManager.cs",
+              "ViewState": "AgIAAM8AAAAAAAAAAAAIwNQAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-25T06:15:32.475Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Peer.cs",
+              "DocumentMoniker": "C:\\DC_22377087\\DC_2\\TrackerWebService\\TrackerWebService\\Models\\Peer.cs",
+              "RelativeDocumentMoniker": "TrackerWebService\\Models\\Peer.cs",
+              "ToolTip": "C:\\DC_22377087\\DC_2\\TrackerWebService\\TrackerWebService\\Models\\Peer.cs",
+              "RelativeToolTip": "TrackerWebService\\Models\\Peer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-25T06:26:56.498Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "PeerResgistrationRequest.cs",
+              "DocumentMoniker": "C:\\DC_22377087\\DC_2\\TrackerWebService\\TrackerWebService\\Models\\PeerResgistrationRequest.cs",
+              "RelativeDocumentMoniker": "TrackerWebService\\Models\\PeerResgistrationRequest.cs",
+              "ToolTip": "C:\\DC_22377087\\DC_2\\TrackerWebService\\TrackerWebService\\Models\\PeerResgistrationRequest.cs",
+              "RelativeToolTip": "TrackerWebService\\Models\\PeerResgistrationRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-25T06:28:27.162Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "StalePeerCleanupService.cs",
+              "DocumentMoniker": "C:\\DC_22377087\\DC_2\\TrackerWebService\\TrackerWebService\\Services\\StalePeerCleanupService.cs",
+              "RelativeDocumentMoniker": "TrackerWebService\\Services\\StalePeerCleanupService.cs",
+              "ToolTip": "C:\\DC_22377087\\DC_2\\TrackerWebService\\TrackerWebService\\Services\\StalePeerCleanupService.cs",
+              "RelativeToolTip": "TrackerWebService\\Services\\StalePeerCleanupService.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAIwA4AAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-25T06:40:00.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\DC_22377087\\DC_2\\TrackerWebService\\TrackerWebService\\Program.cs",
+              "RelativeDocumentMoniker": "TrackerWebService\\Program.cs",
+              "ToolTip": "C:\\DC_22377087\\DC_2\\TrackerWebService\\TrackerWebService\\Program.cs",
+              "RelativeToolTip": "TrackerWebService\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-25T06:07:49.726Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -367,6 +362,29 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2026-10-25T06:16:06.602Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{c9c0ae26-aa77-11d2-b3f0-0000f87570ee}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\DC_22377087\\DC_2\\TrackerWebService\\PeerApplication\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "PeerApplication\\MainWindow.xaml",
+              "ToolTip": "C:\\DC_22377087\\DC_2\\TrackerWebService\\PeerApplication\\MainWindow.xaml",
+              "RelativeToolTip": "PeerApplication\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-10-25T06:54:34.143Z"
             }
           ]
         }

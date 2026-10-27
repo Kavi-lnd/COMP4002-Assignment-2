@@ -7,10 +7,14 @@ using System.Threading.Tasks;
 
 namespace PeerApplication.Models
 {
+    // details tthat are needed to register a peer (along with the tracker)
     public class JobSummary
-    {
-        public string JobId { get; set; }
-        public string FunctionName { get; set; }
+      {
+
+           public string JobId { get; set; }
+          public string FunctionName { get; set; }
     }
+
+
 }
 

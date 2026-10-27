@@ -1,5 +1,4 @@
-﻿
-using Microsoft.Win32;
+﻿using Microsoft.Win32;
 using Newtonsoft.Json;
 using PeerApplication.Models;
 using PeerApplication.Services;
@@ -14,25 +13,32 @@ using System.Windows;
 namespace PeerApplication
 {
     public partial class MainWindow : Window
-    {
-        private readonly HttpClient httpClient = new HttpClient();
+      {
+           private readonly HttpClient httpClient = new HttpClient();
 
-        private JobServer jobServer;
-        private PeerApplication.Networking.PeerNetworking peerNetworking;
-        private const string TrackerUrl = "https://localhost:7083";
+          private JobServer jobServer;
+           private PeerApplication.Networking.PeerNetworking peerNetworking;
+          private const string TrackerUrl = "https://localhost:7083";
 
-        public MainWindow()
-        {
-            InitializeComponent();
+            public MainWindow()
+         {
+             InitializeComponent();
+
+            //Event handler when the window is cloding
             Closing += MainWindow_Closing;
-            LoadFileButton.Click += LoadFileButton_Click;
-            SubmitJobButton.Click += SubmitJobButton_Click;
-            RegisterPeerButton.Click += RegisterPeerButton_Click;
+            // ---- buttons with event handler ---
+             LoadFileButton.Click += LoadFileButton_Click;
+             SubmitJobButton.Click += SubmitJobButton_Click;
+           
+              RegisterPeerButton.Click += RegisterPeerButton_Click;
             GetJobsButton.Click += GetJobsButton_Click;
+            // job server is created
             jobServer = new JobServer();
             // jobServer.Start(int.Parse(WcfPortTextBox.Text));
         }
 
+
+         // loads the file dialog so the user has the ability to select a pyhton code they want 
         private void LoadFileButton_Click(object sender, RoutedEventArgs e)
         {
             OpenFileDialog dialog = new OpenFileDialog();
@@ -40,43 +46,40 @@ namespace PeerApplication
 
             if (dialog.ShowDialog() == true)
             {
-                PythonCodeTextBox.Text = File.ReadAllText(dialog.FileName);
-                StatusTextBlock.Text = "Status: Python file loaded";
-            }
-        }
+               
+                 PythonCodeTextBox.Text = File.ReadAllText(dialog.FileName);
+                 StatusTextBlock.Text = "Status: Python File Loaded";
+            } }
 
-        private void SubmitJobButton_Click(object sender, RoutedEventArgs e)
+           // Job from the pyhton code is created 
+         private void SubmitJobButton_Click(object sender, RoutedEventArgs e)
         {
-            string code = PythonCodeTextBox.Text;
+               string code = PythonCodeTextBox.Text;
+             MessageBox.Show("Python code is being submitted:\n" + code);
 
-            MessageBox.Show("Python code being submitted:\n" + code);
-
-            if (string.IsNullOrWhiteSpace(code))
-            {
-                MessageBox.Show("Please enter or load Python code first.");
+            if (string.IsNullOrWhiteSpace(code)){
+                MessageBox.Show("Please enter or load the Python code first!");
+               
                 return;
             }
 
             byte[] codeBytes = Encoding.UTF8.GetBytes(code);
-            string encodedCode = Convert.ToBase64String(codeBytes);
-
-            byte[] hashBytes = SHA256.Create().ComputeHash(
-                Encoding.UTF8.GetBytes(encodedCode));
-
-            string hash = BitConverter.ToString(hashBytes).Replace("-", "");
+              string encodedCode = Convert.ToBase64String(codeBytes);
+            byte[] hashBytes = SHA256.Create().ComputeHash(   Encoding.UTF8.GetBytes(encodedCode));
+             string hash = BitConverter.ToString(hashBytes).Replace("-", "");
 
 
             Job job = new Job
             {
-                JobId = Guid.NewGuid().ToString(),
+                  JobId = Guid.NewGuid().ToString(),
                 FunctionName = "calculate",
-                Code = encodedCode,
-                Hash = hash,
-                Arguments = new System.Collections.Generic.List<object> { 5 },
-                Status = "Available"
-            };
+                 Code = encodedCode,
+                  Hash = hash,
+                  Arguments = new System.Collections.Generic.List<object> { 5 },
+                
+                Status = "Available" };
 
-            JobService.jobManager.AddJob(job);
+                  JobService.jobManager.AddJob(job);
 
             OutputTextBox.Text =
                 "Job created:\n" +
@@ -87,52 +90,46 @@ namespace PeerApplication
             StatusTextBlock.Text = "Status: Job created";
         }
 
-        private async void RegisterPeerButton_Click(
-            object sender, RoutedEventArgs e)
+
+
+
+
+        //  thh peer is registered with the tracker
+        // start the networing srvices 
+        private async void RegisterPeerButton_Click(object sender, RoutedEventArgs e)
         {
-            if (!int.TryParse(WcfPortTextBox.Text, out int port)
-                || port < 1 || port > 65535)
-            {
-                MessageBox.Show("Enter a valid WCF port.");
-                return;
-            }
+            if (!int.TryParse(WcfPortTextBox.Text, out int port)  || port < 1 || port > 65535)
+            { MessageBox.Show("Enter a valid WCF port.");
+                return; }
 
-            if (string.IsNullOrWhiteSpace(PeerIdTextBox.Text)
-                || string.IsNullOrWhiteSpace(IpAddressTextBox.Text))
-            {
-                MessageBox.Show("Enter a peer ID and IP address.");
-                return;
-            }
+            if (string.IsNullOrWhiteSpace(PeerIdTextBox.Text)  || string.IsNullOrWhiteSpace(IpAddressTextBox.Text))
+              {
+                  MessageBox.Show("Enter a peer ID and IP address.");
+                 return;
+              }
 
-            var peer = new
-            {
-                peerId = PeerIdTextBox.Text.Trim(),
-                ipAddress = IpAddressTextBox.Text.Trim(),
+            var peer = new {
+               
+                 peerId = PeerIdTextBox.Text.Trim(),
+                 ipAddress = IpAddressTextBox.Text.Trim(),
                 wcfPort = port
+
             };
 
-            try
-            {
-                RegisterPeerButton.IsEnabled = false;
+            try   {
+                     RegisterPeerButton.IsEnabled = false;
                 StatusTextBlock.Text = "Status: Registering...";
 
                 string json = JsonConvert.SerializeObject(peer);
-                using (var content = new StringContent(
-                    json, Encoding.UTF8, "application/json"))
+                using (var content = new StringContent(  json, Encoding.UTF8, "application/json"))
                 {
-                    HttpResponseMessage response = await httpClient.PostAsync(
-                        TrackerUrl + "/api/Peers", content);
+                    HttpResponseMessage response = await httpClient.PostAsync(TrackerUrl + "/api/Peers", content);
 
-                    string responseBody =
-                        await response.Content.ReadAsStringAsync();
+                    string responseBody =  await response.Content.ReadAsStringAsync();
 
                     if (response.IsSuccessStatusCode)
-                    {
-                        jobServer.Start(port);
-                        if (peerNetworking != null)
-                        {
-                            peerNetworking.Stop();
-                        }
+                    { jobServer.Start(port);
+                        if (peerNetworking != null) {  peerNetworking.Stop(); }
 
                         peerNetworking =
                             new PeerApplication.Networking.PeerNetworking(
@@ -140,79 +137,72 @@ namespace PeerApplication
                                 TrackerUrl,
                                 port);
 
-                        peerNetworking.Start();
+                          peerNetworking.Start();
 
-                        StatusTextBlock.Text = "Status: Peer registered";
+                        StatusTextBlock.Text = "Status: Peer Registered";
                         OutputTextBox.Text =
-                            "Successfully registered with the tracker.\n\n"
+                            "Successfully registered with the tracker!\n\n"
                             + responseBody;
-                        MessageBox.Show("Peer registered successfully!");
-                    }
-                    else
-                    {
-                        StatusTextBlock.Text = "Status: Registration failed";
+                        MessageBox.Show("Peer is registered successfully!");
+                    } else {
+                          StatusTextBlock.Text = "Status: Registration failed";
                         MessageBox.Show(
                             "Tracker returned: " + (int)response.StatusCode
                             + "\n" + responseBody);
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                StatusTextBlock.Text = "Status: Connection error";
-                MessageBox.Show(
-                    "Could not contact the tracker.\n\n" + ex.Message);
+                    } } }  catch (Exception ex) {
+                                StatusTextBlock.Text = "Status: Connection error";
+                        MessageBox.Show( "Could not contact the tracker!!!\n\n" + ex.Message);
             }
             finally
-            {
-                RegisterPeerButton.IsEnabled = true;
-            }
+            { RegisterPeerButton.IsEnabled = true; }
         }
 
 
 
 
 
-
+        // available job is retrieved
+        // claims, executes and also submits the result
         private async void GetJobsButton_Click(object sender, RoutedEventArgs e)
         {
-            try
-            {
-                JobClient jobClient = new JobClient();
+            try {
+                  JobClient jobClient = new JobClient();
 
-                string address = "net.tcp://localhost:"
-                    + WcfPortTextBox.Text + "/JobService";
-                string peerId = PeerIdTextBox.Text.Trim();
+                string address = "net.tcp://localhost:" + WcfPortTextBox.Text + "/JobService";
+                
+                
+                  string peerId = PeerIdTextBox.Text.Trim();
 
-                var jobs = await Task.Run(() =>
-                    jobClient.GetAvailableJobs(address));
+                var jobs = await Task.Run(() =>  jobClient.GetAvailableJobs(address));
 
-                if (jobs.Count == 0)
-                {
-                    OutputTextBox.Text = "No available jobs found.";
-                    StatusTextBlock.Text = "Status: No available jobs";
+                if (jobs.Count == 0){
+                    OutputTextBox.Text = "No available jobs found!";
+                    StatusTextBlock.Text = "Status: No available Jobs";
+                    
                     return;
                 }
+
+
+
 
                 var job = jobs[0];
 
-                bool claimed = await Task.Run(() =>
-                    jobClient.ClaimJob(address, job.JobId, peerId));
+                bool claimed = await Task.Run(() =>   jobClient.ClaimJob(address, job.JobId, peerId));
 
-                if (!claimed)
-                {
+                if (!claimed)  {
                     OutputTextBox.Text = "Could not claim the job.";
                     StatusTextBlock.Text = "Status: Job claim failed";
-                    return;
-                }
+                    return;   }
 
                 Job downloadedJob = await Task.Run(() =>
                     jobClient.DownloadJob(address, job.JobId, peerId));
 
+
+
                 
                 if (downloadedJob == null)
-                {
-                    OutputTextBox.Text = "Job claimed, but download failed.";
+                {  OutputTextBox.Text = "Job claimed, but download failed.";
+                    
                     StatusTextBlock.Text = "Status: Download failed";
                     return;
                 }
@@ -222,6 +212,7 @@ namespace PeerApplication
                     + "Function: " + downloadedJob.FunctionName + "\n"
                     + "Claim successful: True\n"
                     + "Download successful: True";
+
 
 
 
@@ -249,30 +240,30 @@ namespace PeerApplication
 
             }
             catch (Exception ex)
-            {
-                StatusTextBlock.Text = "Status: Job operation failed";
+            { StatusTextBlock.Text = "Status: Job operation failed";
                 MessageBox.Show(
                     "Could not retrieve, claim, or download the job:\n"
-                    + ex.Message);
-            }
+                    + ex.Message);  }
         }
 
 
 
 
-
-        private void MainWindow_Closing(
-    object sender, System.ComponentModel.CancelEventArgs e)
+        // Peers networking services us stopped
+        private void MainWindow_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
             if (peerNetworking != null)
             {
-                peerNetworking.Stop();
-            }
+                peerNetworking.Stop(); }
 
-            if (jobServer != null)
-            {
+            if (jobServer != null)     {
                 jobServer.Stop();
+           
+            
             }
         }
     }
+
+
+
 }

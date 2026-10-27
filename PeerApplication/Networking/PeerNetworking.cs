@@ -11,106 +11,88 @@ using System.Threading.Tasks;
 
 
 namespace PeerApplication.Networking
-{
-    internal class PeerNetworking
+{  internal class PeerNetworking
     {
-        private Thread networkingThread;
+           private Thread networkingThread;
         private bool isRunning;
 
-        private string peerId;
-        private string trackerUrl;
-        private int wcfPort;
+        
+          private string peerId;
+         private string trackerUrl;
+           private int wcfPort;
 
-        public PeerNetworking(string peerId, string trackerUrl, int wcfPort)
-        {
-            this.peerId = peerId;
+         public PeerNetworking(string peerId, string trackerUrl, int wcfPort) {
+              this.peerId = peerId;
             this.trackerUrl = trackerUrl;
-            this.wcfPort = wcfPort;
+              this.wcfPort = wcfPort;
         }
-        public void Start()
-        {
+        public void Start() {
             isRunning = true;
 
             networkingThread = new Thread(NetworkingLoop);
-            networkingThread.IsBackground = true;
-            networkingThread.Start();
-        }
+             // Reference: https://learn.microsoft.com/en-us/dotnet/standard/threading/foreground-and-background-threads
+             networkingThread.IsBackground = true;
+            
+            networkingThread.Start();}
+
+
 
 
         private void NetworkingLoop()
         {
             while (isRunning)
-            {
-                try
-                {
-                    SendHeartbeat().GetAwaiter().GetResult();
+            { try {
+                      SendHeartbeat().GetAwaiter().GetResult();
 
                     List<PeerInfo> peers = GetPeerList()
                         .GetAwaiter().GetResult();
 
-                    System.Diagnostics.Debug.WriteLine(
-    "Peers found: " + peers.Count);
+                    System.Diagnostics.Debug.WriteLine( "Peers found: " + peers.Count);
 
                     foreach (PeerInfo peer in peers)
-                    {
-                        if (peer.PeerId == peerId)
-                        {
-                            continue;
-                        }
+                    { if (peer.PeerId == peerId) {  continue; }
 
                         string address = "net.tcp://"
                             + peer.IpAddress + ":"
                             + peer.WcfPort + "/JobService";
 
-                        System.Diagnostics.Debug.WriteLine(
-                            "Peer address: " + address);
+                           System.Diagnostics.Debug.WriteLine(   "Peer address: " + address);
 
-                        JobClient jobClient = new JobClient();
+                         JobClient jobClient = new JobClient();
 
-                        List<JobSummary> jobs =
-                            jobClient.GetAvailableJobs(address);
+                        List<JobSummary> jobs =  jobClient.GetAvailableJobs(address);
 
-                        System.Diagnostics.Debug.WriteLine(
-                            "Available jobs from " + peer.PeerId
-                            + ": " + jobs.Count);
+                        System.Diagnostics.Debug.WriteLine( "Available jobs from " + peer.PeerId + ": " + jobs.Count);
 
-                        if (jobs.Count == 0)
-                        {
-                            continue;
-                        }
+                          if (jobs.Count == 0)
+                            {  continue;  }
 
 
-                        JobSummary job = jobs[0];
+                           JobSummary job = jobs[0];
 
-                        bool claimed = jobClient.ClaimJob(
-                            address, job.JobId, peerId);
+                        bool claimed = jobClient.ClaimJob(  address, job.JobId, peerId);
 
-                        if (!claimed)
-                        {
-                            continue;
-                        }
+                          if (!claimed)
+                        { continue;
+                           }
 
-                        System.Diagnostics.Debug.WriteLine(
-                            "Claimed job: " + job.JobId);
+                        System.Diagnostics.Debug.WriteLine(  "Claimed job: " + job.JobId);
 
 
 
-                        Job downloadedJob = jobClient.DownloadJob(
-                            address, job.JobId, peerId);
+                        Job downloadedJob = jobClient.DownloadJob(  address, job.JobId, peerId);
 
                         if (downloadedJob == null)
-                        {
-                            System.Diagnostics.Debug.WriteLine(
-                                "Job download failed: " + job.JobId);
+                           {
+                            System.Diagnostics.Debug.WriteLine(  "Job download failed: " + job.JobId);
 
-                            continue;
-                        }
+                               continue;
+                           }
 
-                        System.Diagnostics.Debug.WriteLine(
-                            "Job downloaded successfully: " + downloadedJob.JobId);
+                        System.Diagnostics.Debug.WriteLine( "Job downloaded successfully: " + downloadedJob.JobId);
 
 
-                        PythonExecutor executor = new PythonExecutor();
+                           PythonExecutor executor = new PythonExecutor();
 
                         string result = executor.Execute(
                             downloadedJob.Code,
@@ -118,45 +100,27 @@ namespace PeerApplication.Networking
                             downloadedJob.FunctionName,
                             downloadedJob.Arguments);
 
-                        System.Diagnostics.Debug.WriteLine(
-                            "Python result: " + result);
-
-                        bool submitted = jobClient.SubmitResult(
-                            address, downloadedJob.JobId, peerId, result);
-
-                        System.Diagnostics.Debug.WriteLine(
-                            "Result submitted: " + submitted);
+                          System.Diagnostics.Debug.WriteLine( "Python result: " + result);
+                        bool submitted = jobClient.SubmitResult( address, downloadedJob.JobId, peerId, result);
+                         System.Diagnostics.Debug.WriteLine(  "Result submitted: " + submitted);
 
                         if (submitted)
                         {
-                            System.Diagnostics.Debug.WriteLine(
-                                "Job completed successfully: " + downloadedJob.JobId);
+                            System.Diagnostics.Debug.WriteLine(  "Job completed successfully: " + downloadedJob.JobId);
 
-                            ReportCompletedJob(downloadedJob.JobId)
+                               ReportCompletedJob(downloadedJob.JobId)
                                 .GetAwaiter().GetResult();
-                        }
-
-                    }
-                }
-
-
-                catch (Exception ex)
-                {
-                    System.Diagnostics.Debug.WriteLine(
-                        "Peer discovery failed: " + ex.Message);
-                }
-
-
-
-                Thread.Sleep(5000);
+                        } }
+                }catch (Exception ex) {
+                    System.Diagnostics.Debug.WriteLine( "Peer discovery failed: " + ex.Message);
+                }  Thread.Sleep(5000);
             }
         }
 
+        // Ref:https://learn.microsoft.com/en-us/dotnet/api/system.net.http.httpclient.putasync?view=net-10.0
         private async Task SendHeartbeat()
-        {
-            using (HttpClient client = new HttpClient())
-            {
-                await client.PutAsync(
+         { using (HttpClient client = new HttpClient()) {
+                  await client.PutAsync(
                     trackerUrl + "/api/Peers/"
                     + Uri.EscapeDataString(peerId)
                     + "/heartbeat",
@@ -164,6 +128,7 @@ namespace PeerApplication.Networking
             }
         }
 
+          // http heartbeat is sent to the tracker 
         private async Task<string> GetPeers()
         {
             using (HttpClient client = new HttpClient())
@@ -173,43 +138,49 @@ namespace PeerApplication.Networking
             }
         }
 
-
-        private async Task<List<PeerInfo>> GetPeerList()
-        {
-            string json = await GetPeers();
-
+        // List of the peers is taken (tracker as a json string type)
+          private async Task<List<PeerInfo>> GetPeerList()
+         {
+               string json = await GetPeers();
             return JsonConvert.DeserializeObject<List<PeerInfo>>(json);
-        }
+           }
+
+
+
+
+
+        //reference:https://www.newtonsoft.com/json/help/html/SerializingJSON.htm
 
         private async Task ReportCompletedJob(string jobId)
         {
             using (HttpClient client = new HttpClient())
             {
                 var completedJob = new
-                {
-                    PeerId = peerId,
-                    JobId = jobId
-                };
+                 {
+                         PeerId = peerId,
+                         JobId = jobId
+                 };
 
-                string json = JsonConvert.SerializeObject(completedJob);
+                 string json = JsonConvert.SerializeObject(completedJob);
 
-                StringContent content = new StringContent(
+                  StringContent content = new StringContent(
                     json,
                     Encoding.UTF8,
                     "application/json");
 
                 HttpResponseMessage response = await client.PostAsync(
-                    trackerUrl + "/api/CompletedJobs",
-                    content);
+                     trackerUrl + "/api/CompletedJobs",
+                       content);
 
-                System.Diagnostics.Debug.WriteLine(
-                    "Tracker recorded completed job: " + response.IsSuccessStatusCode);
+                    System.Diagnostics.Debug.WriteLine(  "Tracker recorded completed job: " + response.IsSuccessStatusCode);
             }
         }
 
+        // Stop the networkingg loop
         public void Stop()
-        {
-            isRunning = false;
-        }
+       
+           {
+                  isRunning = false;
+            }
     }
 }

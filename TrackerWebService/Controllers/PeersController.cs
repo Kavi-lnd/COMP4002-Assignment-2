@@ -6,72 +6,77 @@ using TrackerWebService.Models;
 namespace TrackerWebService.Controllers
 {
     [ApiController]
+    
+    // Peers that are registered are all retrieved here
     [Route("api/[controller]")]
-    public class PeersController : ControllerBase
-    {
+    public class PeersController : ControllerBase   {
 
         [HttpGet]
-        public IActionResult GetPeers()
-        {
+         public IActionResult GetPeers()
+         {
+            // Remove the peers who are not sending heartbeats
             DBManager.RemoveStalePeers();
-
+            // any remaining peers arer returned
             return Ok(DBManager.GetAllPeers());
-        }
+           }
 
 
-        [HttpPost]
-        public IActionResult RegisterPeer(
-            [FromBody] PeerRegistrationRequest request)
-        {
-            if (string.IsNullOrWhiteSpace(request.PeerId) ||
+
+
+
+            // a new peer is Registered using the deatils that are iin the req body
+         [HttpPost]
+        public IActionResult RegisterPeer( [FromBody] PeerRegistrationRequest request)
+        {     // the peer deatils and the validity of the WCF prts are checked
+            if (string.IsNullOrWhiteSpace(request.PeerId) ||  
                 string.IsNullOrWhiteSpace(request.IpAddress) ||
-                request.WcfPort < 1 ||
-                request.WcfPort > 65535)
-            {
+                request.WcfPort < 1 || request.WcfPort > 65535)
+                 {
+               // Invalid details
                 return BadRequest("Invalid peer registration details.");
-            }
-
-            try
-            {
-                string heartbeat = DateTime.UtcNow.ToString("O");
-
+            } try {   // initial heartbeat is in UTC
+                     string heartbeat = DateTime.UtcNow.ToString("O");
+                // save the peer deails in hte database
                 bool registered = DBManager.RegisterPeer(
-                    request.PeerId,
-                    request.IpAddress,
+                    request.PeerId,request.IpAddress,
                     request.WcfPort,
-                    heartbeat);
+                      heartbeat);
 
-                if (registered)
-                {
-                    return CreatedAtAction(
+                if (registered)  {
+                    // correct successful registration
+                      return CreatedAtAction(
                         nameof(GetPeers),
                         new { },
-                        new { message = "Peer registered successfully." });
+                        new { message = "Peer has been registered successfully!" });
                 }
 
-                return BadRequest("Peer registration failed.");
-            }
-            catch (Exception)
-            {
-                return Conflict("This peer may already be registered.");
-            }
+                
+                // registrtion fails 
+                return BadRequest("Peer registration has failed!");
+            }  catch (Exception)
+              {
+                 return Conflict("This peer may already be registered!");
+              }
         }
 
+
+        // heartbeat time is updated for the peer with the a exiting peerId
 
         [HttpPut("{peerId}/heartbeat")]
-        public IActionResult UpdateHeartbeat(string peerId)
-        {
-            string heartbeat = DateTime.UtcNow.ToString("O");
+          public IActionResult UpdateHeartbeat(string peerId)
+          {
+            // latest UTC time of the heartbeat
+               string heartbeat = DateTime.UtcNow.ToString("O");
+              bool updated = DBManager.UpdateHeartbeat(peerId, heartbeat);
+               if (!updated) {
+                  return NotFound("Peer not found!");
+              }
 
-            bool updated = DBManager.UpdateHeartbeat(peerId, heartbeat);
-
-            if (!updated)
-            {
-                return NotFound("Peer not found.");
-            }
-
-            return Ok(new { message = "Heartbeat updated successfully." });
+           
+            return Ok(new { message = "Heartbeat is updated successfully!" });
         }
+
+
 
     }
 }

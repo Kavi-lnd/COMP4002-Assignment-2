@@ -13,28 +13,27 @@ namespace PeerApplication
         private ServiceHost host;
 
         public void Start(int port)
-        {
-            Uri address = new Uri(
-                "net.tcp://localhost:" + port + "/JobService");
+        {   // adrs og job service is created
+            Uri address = new Uri(  "net.tcp://localhost:" + port + "/JobService");
 
-            host = new ServiceHost(typeof(JobService), address);
-
-            host.AddServiceEndpoint(
-                typeof(IJobService),
-                new NetTcpBinding(),
-                "");
-
+              // service host is created
+            
+              host = new ServiceHost(typeof(JobService), address);
+            // adds the endpoint for the job service
+            host.AddServiceEndpoint( typeof(IJobService),  new NetTcpBinding(), "");
+            // accepts the client req
             host.Open();
-            System.Diagnostics.Debug.WriteLine(
-    "WCF Job Server started successfully on port " + port);
+
+            System.Diagnostics.Debug.WriteLine( "WCF Job Server has been started successfully on port " + port);
         }
 
-        public void Stop()
-        {
+
+
+        // Jobb server is stopped
+        public void Stop() {
             if (host != null)
-            {
-                host.Close();
-            }
+           
+                { host.Close(); }
         }
     }
 }

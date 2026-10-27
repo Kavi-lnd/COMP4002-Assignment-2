@@ -9,8 +9,17 @@ namespace PeerApplication.Models
 {
     public class PeerRegistrationRequest
     {
-        public string PeerId { get; set; } = string.Empty;
+            //uniuque id of peer
+          public string PeerId { get; set; } = string.Empty;
+        
+        
+        // Ip adr of the peer
         public string IpAddress { get; set; } = string.Empty;
+          
+        
+        
+        
+          // port (WCF service of the peer)
         public int WcfPort { get; set; }
     }
 }
